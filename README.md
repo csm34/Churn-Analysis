@@ -114,6 +114,7 @@ Bununla birlikte, yalnızca bu iki sütunu çıkarmak yeterli değildir. Diğer 
 
 Bu değişkenler tek başına sızıntı göstergesi değildir. Değerlendirme, verinin nasıl ve ne zaman toplandığına bağlıdır.
 
+
 ### 2. Model Performansının Doğrulanması
 
 Önceki modelleme aşamasında elde edilen sonuçlar aşağıdaki gibidir:
@@ -128,6 +129,7 @@ Random Forest ve XGBoost modellerinin yüksek skorları, churn müşterilerini a
 
 PR-AUC özellikle önemlidir; çünkü veri setinde churn oranı yaklaşık %16,8'dir ve hedef sınıflar dengeli değildir.
 
+
 ### 3. Feature Selection ve Ablation Analizi
 
 Bu aşamada hangi özelliklerin model performansına katkı sağladığı incelenecektir.
@@ -136,6 +138,7 @@ Bu aşamada hangi özelliklerin model performansına katkı sağladığı incele
 - **Feature Ablation:** Bir özellik veya özellik grubu çıkarılarak model yeniden eğitilir ve performans değişimi değerlendirilir.
 
 Önceki analizde `Tenure`, `Complain` ve `NumberOfAddress` birden fazla önem ölçümünde öne çıkmıştır. Bununla birlikte, bir özelliğin önemli görünmesi nedensellik göstermez.
+
 
 ### 4. SHAP ile Modelin Açıklanması
 
@@ -148,6 +151,7 @@ Bu aşamada:
 - Tek bir müşteri için tahminin neden yüksek veya düşük olduğu açıklanacaktır.
 
 SHAP sonuçları modelin öğrendiği ilişkileri gösterir; tek başına nedensel bir açıklama sağlamaz.
+
 
 ### 5. İş Önerileri ve Sonuçların Raporlanması
 
